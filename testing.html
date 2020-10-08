@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").hide();
+  });
+});
+</script>
+
+ 
+<script type="text/javascript">  
+(function(d, m){
+        var kommunicateSettings = {"appId":"36dc28b8135fd6cc901158657f403f919","popupWidget":true,"automaticChatOpenOnNavigation":true,
+        "onInit": function()
+      {
+
+        KommunicateGlobal.document.getElementById("km-faq").addEventListener("click", openFaq)
+        var element_ref = KommunicateGlobal.document.getElementsByClassName("km-kb-container");
+
+if (element_ref) {
+        element_ref[0].classList.remove("n-vis");
+        element_ref[0].classList.add("vis");
+
+}
+}
+// 
+    };
+   
+        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+        window.kommunicate = m; m._globals = kommunicateSettings;s
+      })(document, window.kommunicate || {});
+
+function openFaq() { 
+            window.open( 
+              "http://deveditgenie.novatechset.com/faq/"); 
+                    event.stopPropagation();
+
+        } 
+    </script>
+
+</head>
+<body>
+
+Test- FAQ Links
+
+</body>
+</html>
